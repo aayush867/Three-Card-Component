@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@300&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    
+}
+.container{
+    max-width: 800px;
+    margin: 100px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: darkblue;
+}
+
+.card{
+    padding: 35px;
+
+}
+h1{
+   font-family: Big Shoulders Display;
+   font-weight: 700;
+   padding: 15px 0;
+   color: hsl(0, 0%, 95%);
+   text-orientation: upright;
+}
+
+.sed{
+   background-color: hsl(31, 77%, 52%);
+}
+.suv{
+    background-color: hsl(184, 100%, 22%);
+}
+.lux{
+    background-color: hsl(179, 100%, 13%);
+}
+
+p{
+    font-family: Lexend Deca;
+    font-weight: 400;
+    color: hsla(0, 0%, 100%, 0.75);
+    padding-top: 15px;
+    font-size: 13px;
+    line-height: 1.7em;
+}
+
+button{
+    font-family: Lexend Deca;
+    outline: none;
+    background-color: hsl(0, 0%, 95%);
+    padding: 10px 25px;
+    margin-top: 75px;
+    border: none;
+    font-size: 13px;
+    border-radius: 30px;
+    border: 2px solid hsl(0, 0%, 95%);
+    
+}
+.sed > button {
+     color:hsl(31, 77%, 52%);
+}
+.sed > button:hover{
+    background-color:hsl(31, 77%, 52%) ;
+}
+
+.suv > button {
+    color:hsl(184, 100%, 22%);
+}
+.suv > button:hover{
+    background-color:hsl(184, 100%, 22%) ;
+}
+.lux > button{
+    color:hsl(179, 100%, 13%);
+}
+.lux > button:hover{
+    background-color:hsl(179, 100%, 13%);
+}
+
+button:hover{
+    color:hsl(0, 0%, 95%);   
+}
+/*media queries*/
+
+@media only screen and (max-width: 600px) {
+     .container{
+         grid-template-columns: 1fr 5fr 1fr;
+         border-radius: 12px;
+     }
+     .card{
+         grid-column: 2/3;
+         border-radius: 12px;
+     }
+}
+
+
+
